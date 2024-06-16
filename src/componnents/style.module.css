@@ -1,0 +1,35 @@
+@keyframes growAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.grow {
+  animation: growAnimation 0.9s forwards;
+}
+
+.gpt {
+  padding: 2rem;
+  background-color: #334155;
+  position: absolute;
+  left: 0cm;
+  animation: slide-left-to-right 3s ease-in-out;
+  /* Adjust duration and timing function as needed */
+
+}
+
+@keyframes slide-left-to-right {
+  0% {
+    width: 99vw;
+  }
+
+  100% {
+    width: 0vw;
+    /* Adjust the ending position */
+  }
+
+}
